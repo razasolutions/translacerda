@@ -8,7 +8,7 @@ import com.raza.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-	public User findById(long id);
+	public User findById(Long id);
 	
 	public List<User> findAll();
 	
