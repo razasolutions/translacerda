@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
-public class Equipment extends BaseEntity(Long)  {
+public class Equipment extends BaseEntity<Long>  {
 	
 	private static final long serialVersionUID = 6025566720560241474L;
 	
