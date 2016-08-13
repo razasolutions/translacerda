@@ -25,12 +25,12 @@ public class EquipmentController {
 		return equipmentService.save(equipment);
 	}
 	
-	@RequestMapping("/readEquipment")
+	@RequestMapping("/viewEquipment")
 	public Equipment readEquipment(Long id){
 		return equipmentService.findById(id);
 	}
 
-	@RequestMapping("updateEquipment")
+	@RequestMapping("editEquipment")
 	public Equipment updateEquipment(Equipment equipment){
 		return equipmentService.save(equipment);
 	}
