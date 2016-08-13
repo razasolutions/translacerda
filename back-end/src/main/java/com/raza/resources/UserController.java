@@ -25,13 +25,13 @@ public class UserController {
     	return userService.save(user);
     }
     
-    @RequestMapping("/readUser")
-    public User readUser(Long id){
+    @RequestMapping("/viewUser")
+    public User viewUser(Long id){
     	return userService.findById(id);
     }
     
-    @RequestMapping("/updateUser")
-    public User updateUser(User user){
+    @RequestMapping("/editUser")
+    public User editUser(User user){
     	return userService.save(user);
     }
     
