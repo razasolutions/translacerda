@@ -19,4 +19,25 @@ public class UserController {
     public List<User> listUsers() {
         return userService.findAll();
     }
+    
+    @RequestMapping("/addUser")
+    public User addUser(User user){
+    	return userService.save(user);
+    }
+    
+    @RequestMapping("/readUser")
+    public User readUser(Long id){
+    	return userService.findById(id);
+    }
+    
+    @RequestMapping("/updateUser")
+    public User updateUser(User user){
+    	return userService.save(user);
+    }
+    
+    @RequestMapping("/deleteUser")
+    public void deleteUser(User user){
+    	userService.delete(user);
+    }
+    
 }
