@@ -18,11 +18,11 @@ public class RegisterService {
 		return registerRepository.findAll();
 	}
 	
-	public User save(Register register){
+	public Register save(Register register){
 		return registerRepository.save(register);
 	}
 	
-	public User findById(Long id){
+	public Register findById(Long id){
 		return registerRepository.findById(id);
 	}
 	
