@@ -8,8 +8,8 @@ public class Equipment extends BaseEntity<Long>  {
 	
 	private static final long serialVersionUID = -8506028513793354501L;
 	
-	@Column							/** deve ter um jeito mais fácil de se declarar **/
-	private String licensePlate;
+	@Column							
+	private String plate;
 	@Column
 	private String model;
 	@Column
@@ -19,11 +19,11 @@ public class Equipment extends BaseEntity<Long>  {
 	
 	/** Getters and Setters **/
 	
-	public String getLicensePlate() {
-		return licensePlate;
+	public String getPlate() {
+		return plate;
 	}
-	public void setLicensePlate(String licensePlate) {
-		this.licensePlate = licensePlate;
+	public void setPlate(String Plate) {
+		this.plate = plate;
 	}
 	
 	public String getModel() {
