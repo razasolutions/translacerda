@@ -22,7 +22,7 @@ public class Equipment extends BaseEntity<Long>  {
 	public String getPlate() {
 		return plate;
 	}
-	public void setPlate(String Plate) {
+	public void setPlate(String plate) {
 		this.plate = plate;
 	}
 	
