@@ -20,22 +20,22 @@ public class UserController {
         return userService.findAll();
     }
     
-    @RequestMapping("/addUser")
+    @RequestMapping("/add-user")
     public User addUser(User user){
     	return userService.save(user);
     }
     
-    @RequestMapping("/viewUser")
+    @RequestMapping("/view-user")
     public User viewUser(Long id){
     	return userService.findById(id);
     }
     
-    @RequestMapping("/editUser")
+    @RequestMapping("/edit-user")
     public User editUser(User user){
     	return userService.save(user);
     }
     
-    @RequestMapping("/deleteUser")
+    @RequestMapping("/delete-user")
     public void deleteUser(User user){
     	userService.delete(user);
     }
