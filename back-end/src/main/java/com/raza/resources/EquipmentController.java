@@ -20,22 +20,22 @@ public class EquipmentController {
 		return equipmentService.findAll();
 	}
 	
-	@RequestMapping("/addEquipment")
+	@RequestMapping("/add-equipment")
 	public Equipment addEquipment(Equipment equipment){
 		return equipmentService.save(equipment);
 	}
 	
-	@RequestMapping("/viewEquipment")
+	@RequestMapping("/view-equipment")
 	public Equipment readEquipment(Long id){
 		return equipmentService.findById(id);
 	}
 
-	@RequestMapping("editEquipment")
+	@RequestMapping("/edit-equipment")
 	public Equipment updateEquipment(Equipment equipment){
 		return equipmentService.save(equipment);
 	}
 	
-	@RequestMapping("/deleteEquipment")
+	@RequestMapping("/delete-equipment")
 	public void deleteEquipment(Equipment equipment){
 		equipmentService.delete(equipment);
 	}
