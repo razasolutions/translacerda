@@ -21,6 +21,10 @@ public class EquipmentService {
 	public Equipment save(Equipment equipment){
 		return equipmentRepository.save(equipment);
 	}
+	
+	public Equipment edit(Equipment equipment){
+		return equipmentRepository.save(equipment);
+	}
 
 	public Equipment findById(Long id){
 		return equipmentRepository.findById(id);
