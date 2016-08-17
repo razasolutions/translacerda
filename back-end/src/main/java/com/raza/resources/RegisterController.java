@@ -20,22 +20,22 @@ public class RegisterController {
 		return registerService.findAll();
 	}
 	
-	@RequestMapping("/addRegister")
+	@RequestMapping("/add-register")
 	public Register addRegister(Register register){
 		return registerService.save(register);
 	}
 	
-	@RequestMapping("/viewRegister")
+	@RequestMapping("/view-register")
 	public Register readRegister(Long id){
 		return registerService.findById(id);
 	}
 
-	@RequestMapping("editRegister")
+	@RequestMapping("/edit-register")
 	public Register updateRegister(Register register){
 		return registerService.save(register);
 	}
 	
-	@RequestMapping("/deleteRegister")
+	@RequestMapping("/delete-register")
 	public void deleteRegister(Register register){
 		registerService.delete(register);
 	}
