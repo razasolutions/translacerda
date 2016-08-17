@@ -1,5 +1,6 @@
 package com.raza.services;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,12 @@ public class RegisterService {
 	}
 	
 	public Register save(Register register){
+		Date registerDate = new Date();
+		register.setDate(registerDate);
+		return registerRepository.save(register);
+	}
+	
+	public Register edit(Register register){
 		return registerRepository.save(register);
 	}
 	
