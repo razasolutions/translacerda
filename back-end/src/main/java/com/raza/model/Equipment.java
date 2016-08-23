@@ -57,6 +57,4 @@ public class Equipment extends BaseEntity<Long>  {
 		this.color = color;
 	}
 	
-	
-	
 }
