@@ -39,4 +39,5 @@ public class EquipmentController {
 	public void deleteEquipment(Equipment equipment){
 		equipmentService.delete(equipment);
 	}
+	
 }
