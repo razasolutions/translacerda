@@ -4,7 +4,6 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -36,16 +35,12 @@ public class Register extends BaseEntity<Long> {
 	@NotNull
 	Date date;
 	
-	@Column
 	@NotNull
 	@ManyToOne
-	@JoinColumn(name = "id")
 	User user;
 	
-	@Column
 	@NotNull
 	@ManyToOne
-	@JoinColumn(name = "id")
 	Equipment equipment;
 	
 	/** Getters and Setters **/
