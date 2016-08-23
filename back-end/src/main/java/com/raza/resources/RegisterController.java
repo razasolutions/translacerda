@@ -39,4 +39,5 @@ public class RegisterController {
 	public void deleteRegister(Register register){
 		registerService.delete(register);
 	}
+	
 }
