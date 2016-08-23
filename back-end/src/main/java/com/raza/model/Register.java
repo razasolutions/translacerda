@@ -4,6 +4,12 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Register extends BaseEntity<Long> {
@@ -11,19 +17,38 @@ public class Register extends BaseEntity<Long> {
 	private static final long serialVersionUID = -4954050064079269409L;
 
 	@Column
+	@NotNull
+	@Min(-999999)
+	@Max(999999)
+	@Size(min = 1, max = 10)
 	double value;
+	
 	@Column
+	@Size(min = 0, max = 300)
 	String description;
+	
 	@Column
+	@NotNull
+	@Size(min = 1, max = 10)
 	String type;
+	
 	@Column
+	@NotNull
 	Date date;
+	
 	@Column
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name = "id")
 	User user;
+	
 	@Column
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name = "id")
 	Equipment equipment;
 	
-	/* Getters and Setters */
+	/** Getters and Setters **/
 	
 	public double getValue() {
 		return value;

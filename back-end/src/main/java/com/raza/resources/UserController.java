@@ -32,7 +32,7 @@ public class UserController {
     
     @RequestMapping("/edit-user")
     public User editUser(User user){
-    	return userService.save(user);
+    	return userService.edit(user);
     }
     
     @RequestMapping("/delete-user")

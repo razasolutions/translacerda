@@ -32,7 +32,7 @@ public class RegisterController {
 
 	@RequestMapping("/edit-register")
 	public Register updateRegister(Register register){
-		return registerService.save(register);
+		return registerService.edit(register);
 	}
 	
 	@RequestMapping("/delete-register")

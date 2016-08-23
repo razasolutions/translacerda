@@ -32,7 +32,7 @@ public class EquipmentController {
 
 	@RequestMapping("/edit-equipment")
 	public Equipment updateEquipment(Equipment equipment){
-		return equipmentService.save(equipment);
+		return equipmentService.edit(equipment);
 	}
 	
 	@RequestMapping("/delete-equipment")
