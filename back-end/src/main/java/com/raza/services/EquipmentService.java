@@ -33,6 +33,7 @@ public class EquipmentService {
 	public void delete(Equipment equipment){
 		equipmentRepository.delete(equipment);
 	}
+	
 }
 
 
